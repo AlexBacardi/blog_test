@@ -19,7 +19,7 @@ class BlogPostFactory extends Factory
     public function definition()
     {
         $title = $this->faker->sentence(6);
-        $text = $this->faker->text(rand(1000, 4000));
+        $text = $this->faker->text(rand(100, 4000));
         $isPublished = rand(1, 5) > 1;
         $createdAt = $this->faker->dateTimeBetween('-3 month', '-10 days');
         return [
